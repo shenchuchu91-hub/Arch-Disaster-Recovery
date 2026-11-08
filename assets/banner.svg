@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#11111b" />
+      <stop offset="50%" stop-color="#181825" />
+      <stop offset="100%" stop-color="#1e1e2e" />
+    </linearGradient>
+
+    <linearGradient id="rescueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f38ba8" />
+      <stop offset="50%" stop-color="#fab387" />
+      <stop offset="100%" stop-color="#a6e3a1" />
+    </linearGradient>
+
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f38ba8" />
+      <stop offset="100%" stop-color="#89b4fa" />
+    </linearGradient>
+
+    <style>
+      @keyframes pulseGlow {
+        0% { filter: drop-shadow(0 0 8px rgba(243, 139, 168, 0.4)); }
+        50% { filter: drop-shadow(0 0 22px rgba(250, 179, 135, 0.8)); }
+        100% { filter: drop-shadow(0 0 8px rgba(243, 139, 168, 0.4)); }
+      }
+      @keyframes floatShield {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+        100% { transform: translateY(0px); }
+      }
+      @keyframes starTwinkle {
+        0% { opacity: 0.3; }
+        50% { opacity: 0.9; }
+        100% { opacity: 0.3; }
+      }
+      .star1 { animation: starTwinkle 3s infinite ease-in-out; }
+      .star2 { animation: starTwinkle 4.5s infinite ease-in-out 1s; }
+      .floatingShield { animation: floatShield 5s infinite ease-in-out; }
+      .glowingTitle { animation: pulseGlow 4s infinite ease-in-out; }
+    </style>
+  </defs>
+
+  <!-- 背景底板 -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" stroke="#313244" stroke-width="2"/>
+
+  <!-- 科技感线条网格 -->
+  <g opacity="0.05" stroke="#cdd6f4" stroke-width="1">
+    <line x1="150" y1="0" x2="150" y2="420" />
+    <line x1="300" y1="0" x2="300" y2="420" />
+    <line x1="450" y1="0" x2="450" y2="420" />
+    <line x1="600" y1="0" x2="600" y2="420" />
+    <line x1="750" y1="0" x2="750" y2="420" />
+    <line x1="900" y1="0" x2="900" y2="420" />
+    <line x1="1050" y1="0" x2="1050" y2="420" />
+    <line x1="0" y1="84" x2="1200" y2="84" />
+    <line x1="0" y1="168" x2="1200" y2="168" />
+    <line x1="0" y1="252" x2="1200" y2="252" />
+    <line x1="0" y1="336" x2="1200" y2="336" />
+  </g>
+
+  <!-- 星光矩阵 -->
+  <circle cx="200" cy="90" r="1.5" fill="#f38ba8" class="star1" />
+  <circle cx="340" cy="60" r="2" fill="#89dceb" class="star2" />
+  <circle cx="950" cy="80" r="2" fill="#fab387" class="star1" />
+  <circle cx="1060" cy="140" r="1.5" fill="#a6e3a1" class="star2" />
+  <circle cx="860" cy="330" r="2" fill="#cba6f7" class="star1" />
+
+  <!-- 顶部状态指示条 -->
+  <g transform="translate(600, 65)">
+    <rect x="-210" y="-18" width="420" height="36" rx="18" fill="#181825" stroke="#fab387" stroke-width="1.5" opacity="0.9"/>
+    <text x="0" y="5" font-family="'JetBrainsMono Nerd Font', 'Noto Sans CJK SC', sans-serif" font-size="13" font-weight="600" fill="#fab387" text-anchor="middle" letter-spacing="2">
+      🚑 ARCH LINUX DISASTER RECOVERY &amp; REBUILD SOP
+    </text>
+  </g>
+
+  <!-- 主标题 -->
+  <g transform="translate(600, 145)" class="glowingTitle">
+    <text x="0" y="0" font-family="'JetBrainsMono Nerd Font', 'Segoe UI', sans-serif" font-size="44" font-weight="800" fill="url(#rescueGrad)" text-anchor="middle" letter-spacing="3">
+      ARCH DISASTER RECOVERY
+    </text>
+  </g>
+
+  <!-- 副标题与说明 -->
+  <text x="600" y="190" font-family="'Noto Sans CJK SC', 'Segoe UI', sans-serif" font-size="18" font-weight="400" fill="#cdd6f4" text-anchor="middle" letter-spacing="1">
+    换电脑 · 系统滚挂 · 快照回滚 · 跨发行版迁移终极自救指南
+  </text>
+  <text x="600" y="222" font-family="'JetBrainsMono Nerd Font', 'Noto Sans CJK SC', sans-serif" font-size="14" font-weight="300" fill="#a6adc8" text-anchor="middle" letter-spacing="0.5">
+    “系统坏了用哪个？照着命令敲，15分钟满血复活完整工作环境。”
+  </text>
+
+  <!-- 下方四大灾难自救场景导航卡片 -->
+  <g transform="translate(600, 310)">
+    <rect x="-480" y="-45" width="960" height="90" rx="12" fill="#181825" stroke="#45475a" stroke-width="1.2" opacity="0.85"/>
+
+    <!-- 场景 1: 换新电脑 -->
+    <g transform="translate(-360, 0)">
+      <circle cx="0" cy="-8" r="16" fill="#313244" stroke="#89b4fa" stroke-width="1.5"/>
+      <text x="0" y="-3" font-family="'JetBrainsMono Nerd Font', sans-serif" font-size="13" font-weight="bold" fill="#89b4fa" text-anchor="middle">💻</text>
+      <text x="0" y="18" font-family="'Noto Sans CJK SC', sans-serif" font-size="12" font-weight="600" fill="#cdd6f4" text-anchor="middle">换新电脑装机</text>
+      <text x="0" y="32" font-family="'JetBrainsMono Nerd Font', sans-serif" font-size="10" fill="#6c7086" text-anchor="middle">Guide + dotfiles</text>
+    </g>
+
+    <!-- 场景 2: 滚挂救砖 -->
+    <g transform="translate(-120, 0)">
+      <circle cx="0" cy="-8" r="16" fill="#313244" stroke="#f38ba8" stroke-width="1.5"/>
+      <text x="0" y="-3" font-family="'JetBrainsMono Nerd Font', sans-serif" font-size="13" font-weight="bold" fill="#f38ba8" text-anchor="middle">🛠️</text>
+      <text x="0" y="18" font-family="'Noto Sans CJK SC', sans-serif" font-size="12" font-weight="600" fill="#cdd6f4" text-anchor="middle">Arch 滚挂黑屏</text>
+      <text x="0" y="32" font-family="'JetBrainsMono Nerd Font', sans-serif" font-size="10" fill="#6c7086" text-anchor="middle">LiveUSB chroot</text>
+    </g>
+
+    <!-- 场景 3: 快照回滚 -->
+    <g transform="translate(120, 0)">
+      <circle cx="0" cy="-8" r="16" fill="#313244" stroke="#a6e3a1" stroke-width="1.5"/>
+      <text x="0" y="-3" font-family="'JetBrainsMono Nerd Font', sans-serif" font-size="13" font-weight="bold" fill="#a6e3a1" text-anchor="middle">⏪</text>
+      <text x="0" y="18" font-family="'Noto Sans CJK SC', sans-serif" font-size="12" font-weight="600" fill="#cdd6f4" text-anchor="middle">快照瞬间恢复</text>
+      <text x="0" y="32" font-family="'JetBrainsMono Nerd Font', sans-serif" font-size="10" fill="#6c7086" text-anchor="middle">Snapper / Timeshift</text>
+    </g>
+
+    <!-- 场景 4: 跨系统迁移 -->
+    <g transform="translate(360, 0)">
+      <circle cx="0" cy="-8" r="16" fill="#313244" stroke="#cba6f7" stroke-width="1.5"/>
+      <text x="0" y="-3" font-family="'JetBrainsMono Nerd Font', sans-serif" font-size="13" font-weight="bold" fill="#cba6f7" text-anchor="middle">❄️</text>
+      <text x="0" y="18" font-family="'Noto Sans CJK SC', sans-serif" font-size="12" font-weight="600" fill="#cdd6f4" text-anchor="middle">换发行版 / NixOS</text>
+      <text x="0" y="32" font-family="'JetBrainsMono Nerd Font', sans-serif" font-size="10" fill="#6c7086" text-anchor="middle">Desktop Matrix</text>
+    </g>
+  </g>
+
+  <!-- 底部署名与协议 -->
+  <text x="600" y="390" font-family="'JetBrainsMono Nerd Font', sans-serif" font-size="12" fill="#6c7086" text-anchor="middle">
+    Maintained with Rigor &amp; Practicality by shenchuchu91-hub · Open Source under MIT
+  </text>
+</svg>
