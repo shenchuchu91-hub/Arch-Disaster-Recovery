@@ -83,9 +83,9 @@
    arch-chroot /mnt
    ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
    hwclock --systohc
-   # 创建你的日常用户并赋予 sudo 权限
-   useradd -m -G wheel -s /usr/bin/fish chuchu
-   passwd chuchu
+   # 创建你的日常用户并赋予 sudo 权限（请把 <你的用户名> 换成自己的用户名）
+   useradd -m -G wheel -s /usr/bin/fish <你的用户名>
+   passwd <你的用户名>
    EDITOR=vim visudo # 取消 %wheel ALL=(ALL:ALL) ALL 前面的注释
    
    # 安装引导
