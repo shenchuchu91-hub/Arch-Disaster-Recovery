@@ -1,3 +1,9 @@
+<div align="center">
+  <img src="./assets/banner.svg" width="100%" alt="Monochrome Banner"/>
+</div>
+
+---
+
 # arch-disaster-recovery
 
 system rescue, snapshot rollback, cross-device migration. 15-minute rebuild.
@@ -212,3 +218,9 @@ cd Linux-Desktop-Matrix
 - 本手册中涉及的格式化、挂载及 chroot 操作均属于系统底层级别维护。在格式化或重新写入前，请务必使用 `lsblk` 确认设备盘符无误；
 - 全局安全准则请查阅：**[免责声明与通用安全守则 (Disclaimer)](https://github.com/shenchuchu91-hub/disclaimer)**；
 - 本手册遵从 [MIT License](./LICENSE) 协议开源。
+
+---
+
+<div align="center">
+  <sub>雨声未停 · 保持冷清 · 独行其道</sub>
+</div>
