@@ -1,14 +1,12 @@
-<div align="center">
-  <img src="./assets/banner.svg" width="100%" alt="Monochrome Banner"/>
-</div>
+<p align="center">
+  <img src="./assets/banner.jpg" width="100%" alt="" />
+</p>
 
----
+<p align="center"><sub>雨还在下</sub></p>
 
-# arch-disaster-recovery
+# 系统坏了怎么修
 
-system rescue, snapshot rollback, cross-device migration. 15-minute rebuild.
-
----
+进不去、滚挂了、换硬盘。先看下面的表，对上症状再动手。Live 盘里操作，动分区之前先确认盘符。
 
 ## 目录全景 (Table of Contents)
 
@@ -222,5 +220,5 @@ cd Linux-Desktop-Matrix
 ---
 
 <div align="center">
-  <sub>雨声未停 · 保持冷清 · 独行其道</sub>
+  <sub>雨还在下</sub>
 </div>
