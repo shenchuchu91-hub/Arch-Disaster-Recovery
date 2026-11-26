@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="./assets/banner.jpg" width="100%" alt="" />
-</p>
-
-<p align="center"><sub>雨还在下</sub></p>
+<img alt="Arch-Disaster-Recovery · 雨还在下" src="./assets/header.svg" width="100%" />
 
 # 系统坏了怎么修
 
@@ -167,3 +163,5 @@ cd Linux-Desktop-Matrix
 格式化、挂载、chroot 都会碰到整块盘。`lsblk` 对上了再敲。许可是 [MIT](./LICENSE)。
 
 <p align="center"><sub>雨还在下</sub></p>
+
+<img alt="雨还在下 · 屏幕常亮" src="./assets/footer.svg" width="100%" />
